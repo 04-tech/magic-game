@@ -3,7 +3,6 @@ const iconlist=["paw","tram","snowboarding","spider","angry","columns","smile","
    "fish","egg","cheese","bone","cookie","carrot","futbol","brain","car","ambulance","bicycle","helicopter","bus","plane"];
     var a=iconlist[Math.floor(Math.random()*iconlist.length)];
     var li;
-   
     for(var i=0;i<=99;i++)
     {
         if(i%9==0){
@@ -42,7 +41,7 @@ const iconlist=["paw","tram","snowboarding","spider","angry","columns","smile","
       const magic=()=>{
       var b=document.getElementsByTagName("li")[0].innerHTML;
       var img=b.slice(21,-6);
-      document.getElementById("magic").innerHTML= `<i id="answer"class="fas fa-${img}" style="font-size: 300px; color:red;"></i>`;
+      document.getElementById("magic").innerHTML= `<i id="answer"class="fas fa-${img}" style="font-size: 300px; color:rgb(61, 241, 172);;"></i>`;
       document.getElementsByClassName("contain")[0].style.display="none";
       document.getElementsByClassName("box")[0].style.display="block";
     }
